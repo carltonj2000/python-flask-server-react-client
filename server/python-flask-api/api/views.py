@@ -19,5 +19,5 @@ def movies():
     movies_list = Movie.query.all()
     movies = []
     for movie in movies_list:
-        movies.append({'tite': movie.title, 'rating': movie.rating})
+        movies.append({'title': movie.title, 'rating': movie.rating})
     return jsonify({'movies': movies})
